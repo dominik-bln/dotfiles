@@ -1,6 +1,6 @@
 # Dominik dotfiles
 
-A personal fork of the great dotfiles by Mathias Bynens
+My personal fork of the excellent dotfiles by Mathias Bynens.
 
 ## Installation
 
