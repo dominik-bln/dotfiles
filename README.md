@@ -68,3 +68,5 @@ When setting up a new Mac, you may want to install some common [Homebrew](http:/
 ```bash
 ./brew.sh
 ```
+
+### Install 

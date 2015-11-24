@@ -68,8 +68,5 @@ brew install tree
 brew install webkit2png
 brew install zopfli
 
-brew install vagrant
-brew install Caskroom/cask/dockertoolbox
-
 # Remove outdated versions from the cellar.
 brew cleanup
