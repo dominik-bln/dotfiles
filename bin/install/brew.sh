@@ -29,6 +29,7 @@ brew install gnu-sed --with-default-names
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
 # running `chsh`.
 brew install bash
+
 brew tap homebrew/versions
 brew install bash-completion2
 
@@ -40,13 +41,7 @@ brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
-brew install homebrew/php/php55 --with-gmp
-
-# Install font tools.
-brew tap bramstein/webfonttools
-brew install sfnt2woff
-brew install sfnt2woff-zopfli
-brew install woff2
+brew install homebrew/php/php70
 
 # Install other useful binaries.
 brew install ack
@@ -58,15 +53,7 @@ brew install imagemagick --with-webp
 brew install lynx
 brew install p7zip
 brew install phantomjs
-brew install pigz
-brew install pv
-brew install rename
-brew install rhino
-brew install speedtest_cli
 brew install ssh-copy-id
-brew install tree
-brew install webkit2png
-brew install zopfli
 
 # Remove outdated versions from the cellar.
 brew cleanup

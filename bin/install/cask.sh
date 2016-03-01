@@ -16,6 +16,7 @@ brew cask install adobe-photoshop-cc
 brew cask install atom
 brew cask install backblaze
 brew cask install cyberduck
+brew cask install dash
 brew cask install dockertoolbox
 brew cask install firefox
 brew cask install google-chrome
