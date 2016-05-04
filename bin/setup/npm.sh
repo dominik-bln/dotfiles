@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-# update npm
-sudo npm install npm -g
+# update of npm should be done via brew, update with 'npm install npm -g'
+# did not work properly in all cases
 
 npm install -g bower
 npm install -g grunt-cli

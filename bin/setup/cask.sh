@@ -1,11 +1,5 @@
 #!/usr/bin/env bash
 
-# Ask for the administrator password upfront.
-sudo -v
-
-# Keep-alive: update existing `sudo` time stamp until the script has finished.
-while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
-
 brew install caskroom/cask/brew-cask
 brew update && brew upgrade brew-cask
 
@@ -21,12 +15,14 @@ brew cask install dockertoolbox
 brew cask install firefox
 brew cask install google-chrome
 brew cask install iterm2
+brew cask install karabiner # to reverse scroll direction for external mouse only
 brew cask install lastpass
 brew cask install libreoffice
 brew cask install mendeley-desktop
 brew cask install mysqlworkbench
 brew cask install omnigraffle
-brew cask install seil
+brew cask install rdm # Redis Desktop Manager
+brew cask install seil # Remap Tab Key
 brew cask install skype
 brew cask install slack
 brew cask install spotify
