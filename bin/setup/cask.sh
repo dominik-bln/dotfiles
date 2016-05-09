@@ -21,8 +21,8 @@ brew cask install libreoffice
 brew cask install mendeley-desktop
 brew cask install mysqlworkbench
 brew cask install omnigraffle
-brew cask install rdm # Redis Desktop Manager
-brew cask install seil # Remap Tab Key
+brew cask install quitter
+brew cask install seil # Remap Tab Key for iTerm2
 brew cask install skype
 brew cask install slack
 brew cask install spotify
