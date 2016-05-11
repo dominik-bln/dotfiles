@@ -15,16 +15,16 @@ brew cask install dockertoolbox
 brew cask install firefox
 brew cask install google-chrome
 brew cask install iterm2
-brew cask install karabiner # to reverse scroll direction for external mouse only
 brew cask install lastpass
 brew cask install libreoffice
-brew cask install mendeley-desktop
 brew cask install mysqlworkbench
 brew cask install omnigraffle
+brew cask install phpstorm
 brew cask install quitter
 brew cask install seil # Remap Tab Key for iTerm2
 brew cask install skype
 brew cask install slack
+brew cask install spectacle
 brew cask install spotify
 brew cask install transmission
 brew cask install vagrant
