@@ -37,11 +37,11 @@ brew install homebrew/dupes/screen
 brew install homebrew/php/php70
 
 # Install other useful binaries.
-brew install ack
 brew install ansible
+brew install ack
+brew install composer
 brew install git
 brew install git-flow
-brew install git-lfs
 brew install imagemagick --with-webp
 brew install lynx
 brew install npm

@@ -4,6 +4,9 @@ export PATH="$HOME/bin:$PATH";
 # Add brew to '$PATH'
 export PATH="/usr/local/sbin:$PATH"
 
+# Add composer to '$PATH'
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
