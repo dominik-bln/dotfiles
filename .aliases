@@ -40,7 +40,7 @@ alias sudo='sudo '
 # Get week number
 alias week='date +%V'
 
-# Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
+# Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, composer and their installed packages
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; composer self-update; composer global update'
 
 # IP addresses
