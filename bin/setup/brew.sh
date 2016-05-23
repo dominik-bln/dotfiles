@@ -48,6 +48,7 @@ brew install npm
 brew install p7zip
 brew install phantomjs
 brew install ssh-copy-id
+brew install symfony-installer
 
 # Remove outdated versions from the cellar.
 brew cleanup
