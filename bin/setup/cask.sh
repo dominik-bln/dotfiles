@@ -12,6 +12,7 @@ brew cask install backblaze
 brew cask install cyberduck
 brew cask install dash
 brew cask install dockertoolbox
+brew cask install dropbox
 brew cask install firefox
 brew cask install google-chrome
 brew cask install iterm2
@@ -27,7 +28,8 @@ brew cask install slack
 brew cask install spectacle
 brew cask install spotify
 brew cask install transmission
-brew cask install vagrant
+
 brew cask install virtualbox
+brew cask install vagrant
 
 brew cleanup && brew cask cleanup
