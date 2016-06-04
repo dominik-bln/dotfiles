@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-brew install caskroom/cask/brew-cask
 brew update && brew upgrade brew-cask
 
 brew install homebrew/completions/brew-cask-completion
@@ -31,5 +30,10 @@ brew cask install transmission
 
 brew cask install virtualbox
 brew cask install vagrant
+
+# supports some non-mainstream versions of programs
+brew tap caskroom/versions
+
+brew cask install phpstorm-eap
 
 brew cleanup && brew cask cleanup
