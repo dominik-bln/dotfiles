@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-brew update && brew upgrade brew-cask
+brew update
 
 brew install homebrew/completions/brew-cask-completion
 
@@ -12,14 +12,16 @@ brew cask install cyberduck
 brew cask install dash
 brew cask install dockertoolbox
 brew cask install dropbox
+brew cask install fantastical
 brew cask install firefox
+brea cask install franz
 brew cask install google-chrome
 brew cask install iterm2
 brew cask install lastpass
 brew cask install libreoffice
 brew cask install mysqlworkbench
+brew cask install omnifocus
 brew cask install omnigraffle
-brew cask install phpstorm
 brew cask install quitter
 brew cask install seil # Remap Tab Key for iTerm2
 brew cask install skype
@@ -30,10 +32,5 @@ brew cask install transmission
 
 brew cask install virtualbox
 brew cask install vagrant
-
-# supports some non-mainstream versions of programs
-brew tap caskroom/versions
-
-brew cask install phpstorm-eap
 
 brew cleanup && brew cask cleanup

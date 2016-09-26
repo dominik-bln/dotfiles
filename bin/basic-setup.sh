@@ -19,13 +19,13 @@ echo "Symlink SSH config"
 ln -s ~/Dropbox/Sync/configs/ssh ~/.ssh/config
 
 
-ln -s ~/Dropbox/Backup/Books ~/Documents
-ln -s ~/Dropbox/Backup/Fonts ~/Documents
-ln -s ~/Dropbox/Backup/Info ~/Documents
-ln -s ~/Dropbox/Backup/Presentations ~/Documents
-ln -s ~/Dropbox/Backup/Projects ~/Documents
+ln -s ~/Dropbox/Sync/Books ~/Documents
+ln -s ~/Dropbox/Sync/Fonts ~/Documents
+ln -s ~/Dropbox/Sync/Info ~/Documents
+ln -s ~/Dropbox/Sync/Presentations ~/Documents
+ln -s ~/Dropbox/Sync/Projects ~/Documents
 
-ln -s ~/Dropbox/Text ~/Documents
+ln -s ~/Dropbox/Sync/Text/ ~/Documents
 
 ln -s ~/Dropbox/Pictures/Desktop ~/Pictures
 ln -s ~/Dropbox/Pictures/Icons ~/Pictures
