@@ -3,7 +3,8 @@
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
 
-  lol = log --graph --oneline --decorate
+	# Show the branch graph
+	lol = log --graph --oneline --decorate -n 40
 
 	# View the current working tree status using the short format
 	s = status -s
@@ -22,6 +23,9 @@
 
 	# Commit all changes
 	ca = !git add -A && git commit -av
+
+	# Commit with message
+	cm = commit -m
 
 	# Switch to a branch, creating it if necessary
 	go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
@@ -62,17 +66,7 @@
 	# List contributors with number of commits
 	contributors = shortlog --summary --numbered
 
-	# Merge GitHub pull request on top of the `master` branch
-	mpr = "!f() { \
-		if [ $(printf \"%s\" \"$1\" | grep '^[0-9]\\+$' > /dev/null; printf $?) -eq 0 ]; then \
-			git fetch origin refs/pull/$1/head:pr/$1 && \
-			git rebase master pr/$1 && \
-			git checkout master && \
-			git merge pr/$1 && \
-			git branch -D pr/$1 && \
-			git commit --amend -m \"$(git log -1 --pretty=%B)\n\nCloses #$1.\"; \
-		fi \
-	}; f"
+	staged = diff --staged
 
 [apply]
 
@@ -97,9 +91,6 @@
 	# Prevent showing files whose names contain non-ASCII symbols as unversioned.
 	# http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
 	precomposeunicode = false
-
-  # Use atom to edit commit messages
-  editor = atom --wait
 
 [color]
 
@@ -143,10 +134,8 @@
 
 [push]
 
-	# Use the Git 1.x.x default to avoid errors on machines with old Git
-	# installations. To use `simple` instead, add this to your `~/.extra` file:
-	# `git config --global push.default simple`. See http://git.io/mMah-w.
-	default = matching
+	# Only push the current branch
+	default = simple
 	# Make `git push` push relevant annotated tags when pushing branches out.
 	followTags = true
 
