@@ -4,4 +4,8 @@
 # errors, see:
 # https://github.com/CocoaPods/CocoaPods/issues/3692
 
-gem install -n /usr/local/bin travis
+sudo gem update --system
+
+sudo gem install -n /usr/local/bin bundler
+sudo gem install -n /usr/local/bin travis
+sudo gem install -n /usr/local/bin sass
