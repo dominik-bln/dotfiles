@@ -27,6 +27,7 @@ apm install higlight-selected
 apm install refactor
 apm install linter-write-good
 apm install project-plus
+apm install dash
 
 ############
 # Languages
