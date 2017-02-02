@@ -18,8 +18,11 @@ unset file;
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;
 
-# Append to the Bash history file, rather than overwriting it
+# Common history and no duplicates in bash history
+# See: http://unix.stackexchange.com/a/18443
+HISTCONTROL=ignoredups:erasedups
 shopt -s histappend;
+PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND"
 
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell;
