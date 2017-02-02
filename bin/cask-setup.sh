@@ -6,6 +6,7 @@ brew install homebrew/completions/brew-cask-completion
 
 brew cask install adobe-photoshop-lightroom
 brew cask install adobe-photoshop-cc
+brew cask install anki
 brew cask install atom
 brew cask install backblaze
 brew cask install cyberduck
