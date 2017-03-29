@@ -37,18 +37,28 @@ brew install homebrew/dupes/screen
 brew install homebrew/php/php70
 
 # Install other useful binaries.
-brew install ansible
 brew install ack
+brew install ansible
+brew install codeception
 brew install composer
+brew install docker
 brew install git
 brew install git-flow
+brew install git-lfs
+brew install git-standup
+brew install gource
 brew install imagemagick --with-webp
+brew install jmeter
 brew install lynx
 brew install npm
 brew install p7zip
 brew install phantomjs
+brew install phploc
+brew install phpmd
+brew install phpunit
 brew install ssh-copy-id
 brew install symfony-installer
+brew install yarn
 
 # Remove outdated versions from the cellar.
 brew cleanup

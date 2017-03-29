@@ -9,4 +9,5 @@ npm install -g gulp-cli
 npm install -g jasmine
 npm install -g karma
 npm install -g mocha
+npm install -g quasar-cli
 npm install -g vue-cli

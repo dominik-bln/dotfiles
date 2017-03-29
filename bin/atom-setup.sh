@@ -15,19 +15,17 @@ apm install monokai-seti
 
 # autcompletion for docblocks https://atom.io/packages/docblockr
 apm install docblockr
-# A package to display colors in project and files.
+# a package to display colors in project and files.
 apm install pigments
 apm install todo-show
 apm install atom-beautify
 apm install auto-detect-indentation
 apm install hyperclick
-apm install file-hyperclick
 apm install linter
-apm install higlight-selected
-apm install refactor
-apm install linter-write-good
-apm install project-plus
-apm install dash
+apm install linter-ui-default
+apm install highlight-selected
+apm install project-manager
+apm install zentabs
 
 ############
 # Languages
@@ -37,22 +35,29 @@ apm install dash
 apm install linter-stylelint
 apm install stylus
 
-# HTML
-apm install emmet
-
 # PHP
 apm install linter-phpcs
 apm install php-twig
-apm install atom-autocomplete-php
-apm install hyperclick-php
+apm install php-integrator-base
+apm install php-integrator-autocomplete-plus
+apm install php-integrator-annotations
+apm install php-integrator-call-tips
+apm install php-integrator-navigation
+apm install php-integrator-tooltips
 
 # JavaScript
+apm install atom-ternjs
 apm install js-hyperclick
+apm install language-babel
 apm install language-vue
 apm install vue-hyperclick
+apm install vue2-autocomplete
 
 # Python
 apm install autocomplete-python
-apm install linter-python-pep257
 apm install linter-python-pep8
 apm install python-autopep8
+apm install linter-flake8
+
+# XML
+apm install autocomplete-xml
