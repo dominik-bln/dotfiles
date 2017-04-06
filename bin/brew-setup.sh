@@ -43,6 +43,7 @@ brew install codeception
 brew install composer
 brew install docker
 brew install git
+brew install git-open
 brew install git-flow
 brew install git-lfs
 brew install git-standup
