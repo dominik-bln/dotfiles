@@ -58,6 +58,7 @@ apm install autocomplete-python
 apm install linter-python-pep8
 apm install python-autopep8
 apm install linter-flake8
+apm install MagicPython
 
 # XML
 apm install autocomplete-xml

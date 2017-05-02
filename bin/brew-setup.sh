@@ -51,6 +51,7 @@ brew install gource
 brew install imagemagick --with-webp
 brew install jmeter
 brew install lynx
+brew install mypy
 brew install npm
 brew install p7zip
 brew install phantomjs

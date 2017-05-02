@@ -12,11 +12,9 @@ brew cask install apache-directory-studio
 brew cask install atom
 brew cask install backblaze
 brew cask install cyberduck
-brew cask install dash
 brew cask install dropbox
 brew cask install fantastical
 brew cask install firefox
-brew cask install flycut
 brea cask install franz
 brew cask install google-chrome
 brew cask install iterm2
@@ -37,6 +35,7 @@ brew cask install slack
 brew cask install spectacle
 brew cask install spotify
 brew cask install tomighty
+brew cask install zoomus
 
 brew cask install virtualbox
 brew cask install vagrant
