@@ -3,6 +3,7 @@
 npm install npm -g
 
 npm install -g bower
+npm install -g npm-check-updates
 npm install -g eslint
 npm install -g grunt-cli
 npm install -g gulp-cli

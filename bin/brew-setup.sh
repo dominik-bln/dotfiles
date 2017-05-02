@@ -46,6 +46,7 @@ brew install codeception
 brew install composer
 brew install docker
 brew install git
+brew install git-open
 brew install git-flow
 brew install git-lfs
 brew install git-standup
@@ -53,6 +54,7 @@ brew install gource
 brew install imagemagick --with-webp
 brew install jmeter
 brew install lynx
+brew install mypy
 brew install npm
 brew install p7zip
 brew install phantomjs
