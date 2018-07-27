@@ -32,39 +32,49 @@ fi;
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
+# Install GnuPG to enable PGP-signing commits.
+brew install gnupg
+
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
-brew install homebrew/dupes/screen
-brew install homebrew/php/php70
+brew install grep
+brew install openssh
+brew install screen
+brew install php
+
+# Install font tools.
+brew tap bramstein/webfonttools
+brew install sfnt2woff
+brew install sfnt2woff-zopfli
+brew install woff2
 
 # Install other useful binaries.
 brew install ack
 brew install ansible
+brew install cloc
 brew install codeception
 brew install composer
 brew install docker
 brew install git
 brew install git-open
-brew install git-flow
 brew install git-lfs
 brew install git-standup
 brew install gource
 brew install imagemagick --with-webp
 brew install jmeter
+brew install kubernetes-cli
 brew install lynx
 brew install mypy
 brew install npm
 brew install p7zip
-brew install phantomjs
-brew install phploc
-brew install phpmd
 brew install phpunit
 brew install ssh-copy-id
-brew install symfony-installer
 brew install testssl
+brew install tree
 brew install yarn
+
+brew install pyenv
+brew install pipenv
 
 # Remove outdated versions from the cellar.
 brew cleanup

@@ -1,11 +1,11 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
-# Add brew to '$PATH'
-export PATH="/usr/local/sbin:$PATH"
-
 # Add composer to '$PATH'
-export PATH="$HOME/.composer/vendor/bin:$PATH"
+export PATH="$HOME/.composer/vendor/bin:$PATH";
+
+# Add brew to '$PATH'
+export PATH="/usr/local/sbin:$PATH";
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -20,9 +20,9 @@ shopt -s nocaseglob;
 
 # Common history and no duplicates in bash history
 # See: http://unix.stackexchange.com/a/18443
-HISTCONTROL=ignoredups:erasedups
+HISTCONTROL=ignoredups:erasedups;
 shopt -s histappend;
-PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND"
+PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND";
 
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell;
@@ -39,11 +39,6 @@ if which brew > /dev/null && [ -f "$(brew --prefix)/share/bash-completion/bash_c
 	source "$(brew --prefix)/share/bash-completion/bash_completion";
 elif [ -f /etc/bash_completion ]; then
 	source /etc/bash_completion;
-fi;
-
-# Enable tab completion for `g` by marking it as an alias for `git`
-if type _git &> /dev/null && [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
-	complete -o default -o nospace -F _git g;
 fi;
 
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards

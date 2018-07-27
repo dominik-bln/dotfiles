@@ -3,6 +3,8 @@ alias dr="cd ~/Dropbox"
 alias d="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/projects"
+alias k="kubectl"
+alias dc="docker-compose"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`

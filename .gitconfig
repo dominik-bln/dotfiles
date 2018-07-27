@@ -121,6 +121,8 @@
 
 	# Detect copies as well as renames
 	renames = copies
+	# Show submodules automatically
+	submodule = log
 
 [help]
 
@@ -135,9 +137,15 @@
 [push]
 
 	# Only push the current branch
-	default = simple
+	default = current
 	# Make `git push` push relevant annotated tags when pushing branches out.
 	followTags = true
+
+
+[status]
+
+	# Show changes in submodules with status
+  submodulesummary = 1
 
 # URL shorthands
 
