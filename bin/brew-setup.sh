@@ -62,7 +62,9 @@ brew install git-standup
 brew install gource
 brew install imagemagick --with-webp
 brew install jmeter
+brew install kubectx
 brew install kubernetes-cli
+brew install kubernetes-helm
 brew install lynx
 brew install mypy
 brew install npm

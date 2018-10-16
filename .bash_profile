@@ -1,6 +1,8 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
+export KUBECONFIG=$HOME/.kube/config:$HOME/.kube/kubecfg.yaml
+
 # Add composer to '$PATH'
 export PATH="$HOME/.composer/vendor/bin:$PATH";
 
