@@ -1,13 +1,12 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
-export KUBECONFIG=$HOME/.kube/config:$HOME/.kube/kubecfg.yaml
+# Add krew to the `$PATH`
+# https://github.com/kubernetes-sigs/krew/
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
-# Add composer to '$PATH'
-export PATH="$HOME/.composer/vendor/bin:$PATH";
-
-# Add brew to '$PATH'
-export PATH="/usr/local/sbin:$PATH";
+# Add brew installs to '$PATH'
+export PATH="/usr/local/bin:$PATH";
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -16,6 +15,9 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
+
+# read multiple kubernete config files
+export KUBECONFIG=$HOME/.kube/config:$HOME/.kube/kubecfg.yaml
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;
@@ -37,11 +39,14 @@ for option in autocd globstar; do
 done;
 
 # Add tab completion for many Bash commands
-if which brew > /dev/null && [ -f "$(brew --prefix)/share/bash-completion/bash_completion" ]; then
-	source "$(brew --prefix)/share/bash-completion/bash_completion";
-elif [ -f /etc/bash_completion ]; then
-	source /etc/bash_completion;
-fi;
+if [[ -e "/usr/local/share/bash-completion/bash_completion" ]]; then
+	export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
+	source "/usr/local/share/bash-completion/bash_completion"
+elif [[ -e "/usr/local/etc/profile.d/bash_completion.sh" ]]; then
+	source "/usr/local/etc/profile.d/bash_completion.sh"
+elif [[ -e "/etc/bash_completion" ]]; then
+	source "/etc/bash_completion"
+fi
 
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2- | tr ' ' '\n')" scp sftp ssh;

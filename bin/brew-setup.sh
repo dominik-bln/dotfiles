@@ -18,9 +18,8 @@ brew install moreutils
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
 brew install gnu-sed --with-default-names
-# Install Bash 4.
+# Install a modern version of Bash.
 brew install bash
-brew tap homebrew/versions
 brew install bash-completion2
 
 # Switch to using brew-installed bash as default shell
@@ -50,26 +49,30 @@ brew install woff2
 
 # Install other useful binaries.
 brew install ack
+brew install adr-tools
 brew install ansible
+brew install ansible-lint
 brew install cloc
-brew install codeception
 brew install composer
 brew install docker
 brew install git
 brew install git-open
 brew install git-lfs
-brew install git-standup
 brew install gource
+brew install hadolint
+brew install helm
+brew install helmfile
 brew install imagemagick --with-webp
 brew install jmeter
 brew install kubectx
 brew install kubernetes-cli
-brew install kubernetes-helm
 brew install lynx
+brew install magic-wormhole
 brew install mypy
 brew install npm
 brew install p7zip
 brew install phpunit
+brew install pre-commit
 brew install ssh-copy-id
 brew install testssl
 brew install tree

@@ -61,12 +61,15 @@
 
 	# Remove branches that have already been merged with master
 	# a.k.a. ‘delete merged’
-	dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+	sweep = !git branch --merged $([[ $1 != \"-f\" ]] \\\n&& git rev-parse master) | egrep -v \"(^\\*|^\\s*(master)$)\" \\\n| xargs git branch -d
 
 	# List contributors with number of commits
 	contributors = shortlog --summary --numbered
 
 	staged = diff --staged
+
+	# Show the user email for the current repository.
+	whoami = config user.email
 
 [apply]
 
@@ -91,6 +94,10 @@
 	# Prevent showing files whose names contain non-ASCII symbols as unversioned.
 	# http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
 	precomposeunicode = false
+
+	# Speed up commands involving untracked files such as `git status`.
+	# https://git-scm.com/docs/git-update-index#_untracked_cache
+	untrackedCache = true
 
 [color]
 
@@ -117,12 +124,22 @@
 	changed = green
 	untracked = cyan
 
+[commit]
+
+	# https://help.github.com/articles/signing-commits-using-gpg/
+	gpgsign = true
+
 [diff]
 
 	# Detect copies as well as renames
 	renames = copies
 	# Show submodules automatically
 	submodule = log
+
+[diff "bin"]
+
+	# Use `hexdump` to diff binary files
+	textconv = hexdump -v -C
 
 [help]
 
@@ -145,7 +162,7 @@
 [status]
 
 	# Show changes in submodules with status
-  submodulesummary = 1
+	submodulesummary = 1
 
 # URL shorthands
 

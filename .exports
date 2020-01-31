@@ -1,11 +1,6 @@
 # Make vim the default editor.
 export EDITOR='vim';
 
-# Enable persistent REPL history for `node`.
-NODE_REPL_HISTORY_FILE=~/.node_history;
-# Allow 32³ entries; the default is 1000.
-NODE_REPL_HISTORY_SIZE='32768';
-
 # Make Python use UTF-8 encoding for output to stdin, stdout, and stderr.
 export PYTHONIOENCODING='UTF-8';
 
@@ -25,5 +20,9 @@ export LESS_TERMCAP_md="${yellow}";
 # Don’t clear the screen after quitting a manual page.
 export MANPAGER='less -X';
 
-# Always enable colored `grep` output.
-export GREP_OPTIONS='--color=auto';
+# Avoid issues with `gpg` as installed via Homebrew.
+# https://stackoverflow.com/a/42265848/96656
+export GPG_TTY=$(tty);
+
+export PATH="$HOME/.poetry/bin:$PATH"
+eval "$(pyenv init -)"
